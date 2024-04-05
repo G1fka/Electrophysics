@@ -1,0 +1,203 @@
+﻿<Window x:Class="Electrophysics.TheoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Electrophysics"
+        mc:Ignorable="d"
+        Title="Theory"
+        WindowState="Maximized" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    <Grid Background="#333838">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="120"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Name="name">
+            <StackPanel Orientation="Horizontal" Margin="0 30 0 0" Name="Q1Stack">
+                <StackPanel>
+                    <Ellipse Margin="50 40 10 0" Name="Q1" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q1Button" GroupName="Navigator" 
+                             Unchecked="Q1Button_Unchecked" Checked="Q1Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 22 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Международная</Run>
+                        <LineBreak/>
+                        <Run>система единиц</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q2Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q2" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q2Button" GroupName="Navigator"
+                             Unchecked="Q2Button_Unchecked" Checked="Q2Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Последовательное</Run>
+                        <LineBreak/>
+                        <Run>соединение</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q3Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q3" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q3Button" GroupName="Navigator"
+                             Unchecked="Q3Button_Unchecked" Checked="Q3Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Параллельное</Run>
+                        <LineBreak/>
+                        <Run>соединение</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q4Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q4" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q4Button" GroupName="Navigator"
+                             Unchecked="Q4Button_Unchecked" Checked="Q4Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Основные элементы</Run>
+                        <LineBreak/>
+                        <Run>электрической цепи</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q5Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q5" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q5Button" GroupName="Navigator"
+                             Unchecked="Q5Button_Unchecked" Checked="Q5Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Элементы сложных</Run>
+                        <LineBreak/>
+                        <Run>электрических цепей</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q6Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q6" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q6Button" GroupName="Navigator"
+                             Unchecked="Q6Button_Unchecked" Checked="Q6Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Законы Ома,</Run>
+                        <LineBreak/>
+                        <Run>Кирхгоффа</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q7Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q7" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q7Button" GroupName="Navigator"
+                             Unchecked="Q7Button_Unchecked" Checked="Q7Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Расчёт эл. цепи методом</Run>
+                        <LineBreak/>
+                        <Run>наложения тока</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q8Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q8" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q8Button" GroupName="Navigator"
+                             Unchecked="Q8Button_Unchecked" Checked="Q8Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Расчёт эл. цепи методом</Run>
+                        <LineBreak/>
+                        <Run>узлового напряжения</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="Q9Stack">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q9" Style="{StaticResource EmptyEllipse}"/>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q9Button" GroupName="Navigator"
+                             Unchecked="Q9Button_Unchecked" Checked="Q9Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 10 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Амперметр и вольтметр</Run>
+                        <LineBreak/>
+                        <Run>в эл. цепи</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Height="80" Name="Q10Stack" VerticalAlignment="Stretch">
+                <StackPanel>
+                    <Rectangle Style="{StaticResource VerticalLine}"/>
+                    <Ellipse Margin="50 0 10 0" Name="Q10" Style="{StaticResource EmptyEllipse}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Q10Button" GroupName="Navigator"
+                             Unchecked="Q10Button_Unchecked" Checked="Q10Button_Checked">
+                    <TextBlock FontSize="25" Foreground="White" Margin="0 25 0 0" FontFamily="Century Gothic"
+                               Style="{StaticResource UnderlineText}">
+                        <Run>Радиоприёмник с УНЧ</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <Button Style="{StaticResource RoundBlueButtonTest}" Margin="0 20 0 0" Width="400" Height="70" Content="К тесту" 
+                    FontSize="40" Name="TestButton" Click="TestButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Background="#2CE8DC"/>
+
+        <Frame Grid.Column="2" Name="TheoryFrame" NavigationUIVisibility="Hidden"/>
+
+        <StackPanel Grid.Column="3">
+            <Button Name="HomeButton" Style="{StaticResource ImageButton}" DockPanel.Dock="Right" Click="HomeButton_Click" 
+                    Margin="0 20 20 0">
+                <Image Width="100" Source="Resources/home_icon_1.png"/>
+            </Button>
+        </StackPanel>
+                    
+    </Grid>
+</Window>

@@ -1,0 +1,163 @@
+﻿<Window x:Class="Electrophysics.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Electrophysics"
+        mc:Ignorable="d"
+        Title="Test"
+        WindowState="Maximized" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    <Grid Background="#333838" Name="TestGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Name="NavigatorStack">
+            <StackPanel Height="200" Name="Que1Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Ellipse Margin="50 40 0 10" Name="Que1" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que1Button" GroupName="Navigator1" 
+                             Unchecked="Que1Button_Unchecked" Checked="Que1Button_Checked" Margin="60 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>1</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que2Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que2" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que2Button" GroupName="Navigator1"
+                             Unchecked="Que2Button_Unchecked" Checked="Que2Button_Checked" Margin="66 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>2</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que3Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que3" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que3Button" GroupName="Navigator1"
+                             Unchecked="Que3Button_Unchecked" Checked="Que3Button_Checked" Margin="68 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>3</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que4Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que4" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que4Button" GroupName="Navigator1"
+                             Unchecked="Que4Button_Unchecked" Checked="Que4Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>4</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que5Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que5" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que5Button" GroupName="Navigator1"
+                             Unchecked="Que5Button_Unchecked" Checked="Que5Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>5</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que6Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que6" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que6Button" GroupName="Navigator1"
+                             Unchecked="Que6Button_Unchecked" Checked="Que6Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>6</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que7Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que7" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que7Button" GroupName="Navigator1"
+                             Unchecked="Que7Button_Unchecked" Checked="Que7Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>7</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que8Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que8" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que8Button" GroupName="Navigator1"
+                             Unchecked="Que8Button_Unchecked" Checked="Que8Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>8</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que9Stack">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que9" Style="{StaticResource EmptyEllipseBigger}"/>
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que9Button" GroupName="Navigator1"
+                             Unchecked="Que9Button_Unchecked" Checked="Que9Button_Checked" Margin="65 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>9</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="200" Name="Que10Stack" VerticalAlignment="Stretch" Width="200">
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 0">
+                    <Rectangle Style="{StaticResource HorizontalLine}"/>
+                    <Ellipse Margin="0 40 0 10" Name="Que10" Style="{StaticResource EmptyEllipseBigger}"/>
+                </StackPanel>
+                <RadioButton Style="{StaticResource HyperTextRadioButton}" Name="Que10Button" GroupName="Navigator1"
+                             Unchecked="Que10Button_Unchecked" Checked="Que10Button_Checked" Margin="55 0 0 0" IsEnabled="False">
+                    <TextBlock Style="{StaticResource UnderlineTextTest}">
+                        <Run>10</Run>
+                    </TextBlock>
+                </RadioButton>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Background="#2CE8DC"/>
+
+        <Frame Grid.Row="2" Name="TestFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

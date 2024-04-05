@@ -1,0 +1,58 @@
+﻿<Window x:Class="Electrophysics.ExerciseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Electrophysics"
+        xmlns:myControls="clr-namespace:WpfCustomControlLibrary1;assembly=WpfCustomControlLibrary1"
+        mc:Ignorable="d"
+        Title="Simulator"
+        WindowState="Maximized" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    <Grid Background="#333838">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Name="HomeButton" Style="{StaticResource ImageButton}" Click="HomeButton_Click" 
+                    Margin="0 20 20 0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Image Width="100" Source="Resources/home_icon_1.png"/>
+        </Button>
+
+        <StackPanel Name="ConditionStack" Grid.Row="0">
+            <TextBlock Style="{StaticResource Header}" Text="Решите задачу:"/>
+            <Image Name="ConditionImage" Width="600"/>
+        </StackPanel>
+
+        <StackPanel Name="AnswerStack" Grid.Row="1" Orientation="Horizontal" Height="500">
+            <Grid Name="AnswerSpaceGrid">
+                <Image Name="AnswerSpaceImage" Source="Resources/Exercises/AnswerSpace.png" 
+                       Width="400" Margin="200 0 0 0" VerticalAlignment="Top"/>
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="99 110 0 0"/>
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="299 110 0 0"/>
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="499 110 0 0"/>
+
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="99 208 0 0" />
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="299 208 0 0"/>
+                <TextBox Style="{StaticResource AnswerSpaceBox}" Margin="499 208 0 0"/>
+            </Grid>
+            <StackPanel Height="500">
+                <Grid>
+                    <Rectangle Style="{StaticResource RoundRectangle}" Width="400" Height="300" 
+                               Stroke="White" StrokeThickness="3" VerticalAlignment="Top" Margin="200 0 0 0"
+                               Fill="#404545"/>
+                    <Image Name="AnswerImage" Width="400" Margin="200 0 0 0" Visibility="Collapsed" VerticalAlignment="Top"/>
+                    <Button Name="ShowAnswerButton" Style="{StaticResource RoundBlueButton}" Content="Ответ"
+                        Width="300" Height="70" Margin="200 115 0 0" Click="ShowAnswerButton_Click" VerticalAlignment="Top"
+                            FontSize="30"/>
+                    <Button Name="NextExerciseButton" Style="{StaticResource RoundBlueButton}" Content="Далее"
+                        Width="400" Height="70" Margin="200 350 0 0" Click="NextExerciseButton_Click"
+                            FontSize="30"/>
+                </Grid>
+                
+            </StackPanel>   
+        </StackPanel>
+    </Grid>
+</Window>

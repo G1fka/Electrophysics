@@ -1,0 +1,32 @@
+﻿<Window x:Class="Electrophysics.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Electrophysics"
+        mc:Ignorable="d"
+        Title="Authorization" 
+        WindowState="Maximized" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    <Grid Background="#333838">
+        <StackPanel Background="#3A4848" Margin="450 50 450 70" Width="800" Height="830">
+            <DockPanel>
+                <Button Name="HomeButton" Style="{StaticResource ImageButton}" DockPanel.Dock="Right" 
+                        Margin="0 30 200 0" Click="HomeButton_Click">
+                    <Image Width="100" Source="Resources/home_icon_1.png"/>
+                </Button>
+                <TextBlock Text="Вход" FontSize="90" DockPanel.Dock="Right" HorizontalAlignment="Right" Margin="0 30 40 0"
+                           Width="250" Foreground="#2CE8DC"/>
+            </DockPanel>
+            <TextBlock Text="Логин:" FontSize="55" Margin="0 60 170 0" HorizontalAlignment="Center" Foreground="White"/>
+            <TextBox Style="{StaticResource SimpleTextBox}" HorizontalAlignment="Center" Name="LoginTextBox"/>
+
+            <TextBlock Text="Пароль:" FontSize="55" Margin="0 50 170 0" HorizontalAlignment="Center" Foreground="White"/>
+            <PasswordBox Style="{StaticResource SimplePassBox}" HorizontalAlignment="Center" Name="PasswordTextBox"/>
+
+            <Button Name="AuthorizeButton" Style="{StaticResource RoundBlueButton}" Width="500" Height="70" 
+                    Margin="0 100 160 0" Content="Войти" FontSize="50" FontFamily="Century Gothic" Click="AuthorizeButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
